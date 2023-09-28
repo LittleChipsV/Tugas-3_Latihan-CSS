@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 6: Selector dan Style pada Multimedia</title>
+    <link rel="shortcut icon" href="Logo.png" type="image/png">
+    <style>
+        /* Selector digunakan untuk memilih mana bagian dari HTML yang akan diubah style-nya*/
+        /* Syntax CSS adalah selector{property: value;} */
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50px;
+
+            /* Menengahkan gambar */
+            display: block;
+            margin: 0px auto 0px auto;
+        }
+
+        /* Selector dengan nama tag */
+        h1{
+            color: gray;
+        }
+
+        /* Selector id */
+        #judul{
+            color: orange;
+        }
+
+        /* Selector class */
+        .tengah{
+            text-align: center;
+            color: blue;
+        }
+
+        /* Multi-selector */
+        h2, h3, h4{
+            color: midnightblue
+        }
+
+        /* Selector lebih spesifik lagi */
+        h2.tengah{
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <img src="gambar.jpg">
+
+    <h1>Halo1</h1>
+    <!-- id = memberi tanda khusus elemen, tidak boleh sama -->
+    <h1 id="judul">Halo2</h1>
+
+    <!-- class = bisa dipakai berkali-kali, sedangkan id tidak digunakan berkali-kali -->
+    <h1 class="tengah">Halo3</h1>
+    <h2 class="tengah">Halo4</h2>
+    <h3>Halo5</h3>
+    <h4>Halo6</h4>
+</body>
+</html>
